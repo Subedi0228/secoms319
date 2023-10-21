@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeckMaster</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="title">DeckMaster</div>
+      <a href="#deckForm" class="navItem">Add Deck</a>
+      <a href="deck.html" class="navItem">View Deck</a>
+      <a href="aboutMe.html" class="navItem">About Us</a>
+    </div>
+
+    <!-- Main things in the page -->
+    <div class="titlePage">
+      <!-- List of decks to choose from -->
+      <div class="listOfDecks">
+        <p class="statement">Choose a deck:</p>
+      </div>
+
+      <!-- Main page image -->
+      <img
+        class="deckImg"
+        src="https://www.brainscape.com/academy/content/images/2020/07/Flashcards.jpg"
+        alt=""
+      />
+
+      <!-- Add a deck form -->
+      <div class="addDeck">
+        <form id="deckForm">
+          Add a Deck here
+          <label for="deckName"></label>
+          <input
+            type="text"
+            id="deckName"
+            name="deckName"
+            placeholder="Enter Deck Name"
+            required
+          />
+          <br />
+          <label for="deckDescription"></label>
+          <input
+            type="text"
+            id="deckDescription"
+            name="deckDescription"
+            placeholder="Enter Deck Description"
+            required
+          />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

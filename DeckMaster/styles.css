@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+/* Positioning and styling the title */
+.title {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #333;
+
+    margin: 8px 70vh 16px 2vw;
+    width: 20vw;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+}
+.navItem {
+    z-index: 1;
+    margin: 16px 5vw 0 0;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #F9E4E4;
+}
+
+.titlePage{
+    display: flex;
+}
+
+.listOfDecks{
+    width: 20vw;
+    height: 75vh;
+    margin: 0 2vw 2vw 2vw;
+    background-color: #C0C6CC;
+    overflow: auto;
+}
+.statement{
+    width: 9vw;
+    margin-left: 5.5vw;
+    font-size: 20px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+    background-color: #C0C6CC;
+    border-bottom: 2px solid #333;
+}
+
+.deckImg{
+    width: 40vw;
+    height: 30vw;
+    margin: 0 0 0 0;
+
+    /* positioning */
+    position: absolute;
+    top: 7.5vw;
+    left: 25vw;
+    z-index: 1;
+}
+
+.addDeck{
+    width: 47vw;
+    height: 32vw;
+    background-color: #F9E4E4;
+
+    /* positioning */
+    position: absolute;
+    left: 50vw;
+    top: 0;
+}
+
+#deckForm {
+    width: 15vw;
+    height: 22vh;
+    padding: 8px;
+    margin: 55vh 0 0 22.5vw;
+    background-color: #fbecec;
+    text-align: center;
+}
+
+#deckName{
+    height: 3vh;
+    width: 12vw;
+    margin-bottom: 8px;
+}
+
+#deckDescription {
+    width: 12vw;
+    height: 12vh;
+    margin-bottom: 8px;
+}

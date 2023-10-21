@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deck Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .deckManager {
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .deckListHeader {
+        display: flex;
+        width: 80vw;
+        margin-top: 12vh;
+        position: relative;
+      }
+
+      .random,
+      .reset {
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        border-bottom: none;
+        margin-top: 8vh;
+        width: 5vw;
+        height: 5vh;
+      }
+
+      .random {
+        position: absolute;
+        bottom: 0;
+        left: 2vw;
+      }
+
+      .reset {
+        position: absolute;
+        bottom: 0;
+        left: 9vw;
+      }
+
+      .details {
+        width: 50vw;
+        background-color: lightgreen;
+
+        position: absolute;
+        bottom: 0;
+        left: 16vw;
+      }
+
+      .deckDescription {
+        height: 8vh;
+      }
+
+      .search {
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        border-bottom: none;
+        width: 10vw;
+        height: 5vh;
+        position: absolute;
+        bottom: 0;
+        right: 2vw;
+      }
+
+      .cardList {
+        width: 80vw;
+        height: 85vh;
+        border: 2vh solid #8b8c89;
+      }
+
+      ::placeholder {
+        font-size: 18px; /* Set the font size */
+        color: #666; /* Set the text color */
+      }
+
+      .element {
+        width: 76vw;
+        height: 20vh;
+        margin: 1vw 2vw 1vw 2vw;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="deckManager">
+      <div class="deckListHeader">
+        <button class="random">Random</button>
+        <button class="reset">Reset</button>
+        <div class="details">
+          <div class="deckTitle">Deck Title</div>
+          <div class="deckDescription">This is the description of the deck</div>
+        </div>
+        <input type="text" class="search" placeholder="Search for a card.." />
+      </div>
+      <div class="cardList">
+        <form id="flashcardForm" style="margin-top: 2vh">
+          <input
+            type="text"
+            id="keyword"
+            name="keyword"
+            style="
+              height: 12vh;
+              width: 20vw;
+              margin-right: 2vw;
+              margin-left: 2vw;
+            "
+            placeholder="Enter keyword here.."
+            required
+          />
+          <input
+            type="text"
+            id="description"
+            name="description"
+            style="height: 12vh; width: 35vw; margin-right: 2vw"
+            placeholder="Enter the description here.."
+            required
+          />
+          <button
+            type="button"
+            id="addCardBtn"
+            style="height: 12vh; width: 15vw; background-color: #4caf50"
+          >
+            Add Card
+          </button>
+        </form>
+        <div class="element">testing class</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
