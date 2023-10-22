@@ -20,4 +20,4 @@ Has the Midterm a Navigation Bar and it functions appropriately ?
 <> Yes, the navigation bar is the set of links on the top right that navigates us to other pages.
 
 Is the Midterm published in Github ?
-<> Yes,
+<> Yes, the project is in https://github.com/Subedi0228/secoms319/tree/8a69fe68d6064174571d932b8b909aa0363dcb7c/DeckMaster
