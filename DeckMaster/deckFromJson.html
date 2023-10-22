@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deck from a JSON file</title>
+    <style>
+      .flashcard {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .flashcard h2 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      .flashcard p {
+        font-size: 1rem;
+      }
+
+      .cont1 {
+        display: flex;
+      }
+      .back {
+        margin: 32px 0 0 40vw;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flashcard-container">
+      <div class="cont1">
+        <h1>These are flashcards obtained from the JSON file:</h1>
+        <a href="index.html" class="back">back</a>
+      </div>
+      <!-- Flashcards will be displayed here -->
+    </div>
+
+    <script>
+      // Get the flashcard container element
+      const flashcardContainer = document.getElementById("flashcard-container");
+
+      // Fetch the data from the JSON file
+      fetch("data/data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          // Iterate through the flashcards and create HTML elements for each one
+          data.flashcards.forEach((flashcard) => {
+            const card = document.createElement("div");
+            card.classList.add("flashcard");
+
+            const keyword = document.createElement("h2");
+            keyword.textContent = flashcard.keyword;
+
+            const description = document.createElement("p");
+            description.textContent = flashcard.description;
+
+            card.appendChild(keyword);
+            card.appendChild(description);
+            flashcardContainer.appendChild(card);
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{
+    "deck_name": "Web Design Flashcards",
+    "flashcards": [
+      {
+        "keyword": "HTML",
+        "description": "HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It provides the structure and content of a webpage through elements like headings, paragraphs, and links."
+      },
+      {
+        "keyword": "CSS",
+        "description": "CSS (Cascading Style Sheets) is used for styling web pages. It allows you to control the layout, colors, and typography of HTML elements, enhancing the visual presentation of a website."
+      },
+      {
+        "keyword": "JavaScript",
+        "description": "JavaScript is a versatile programming language used for web development. It enables interactive and dynamic behavior on web pages, allowing for actions like form validation and responsive design."
+      },
+      {
+        "keyword": "Semantic HTML",
+        "description": "Semantic HTML elements are those that convey the meaning and structure of the content to both browsers and developers. They include elements like <header>, <nav>, <section>, and <footer>."
+      },
+      {
+        "keyword": "CSS Flexbox",
+        "description": "CSS Flexbox is a layout model that simplifies the alignment and distribution of items in a container. It's especially useful for creating flexible and responsive page layouts."
+      },
+      {
+        "keyword": "JavaScript Frameworks",
+        "description": "JavaScript frameworks like React, Angular, and Vue provide pre-built structures and libraries for building complex web applications, making development more efficient."
+      },
+      {
+        "keyword": "Responsive Web Design",
+        "description": "Responsive web design is an approach that makes web pages render well on a variety of devices and window or screen sizes. It uses CSS media queries to adjust layouts and content."
+      },
+      {
+        "keyword": "CSS Grid",
+        "description": "CSS Grid Layout is a two-dimensional grid system that allows precise control of the layout of web pages. It's great for creating complex, grid-based designs."
+      },
+      {
+        "keyword": "DOM (Document Object Model)",
+        "description": "The DOM represents the structure of a web page as a tree of objects that can be manipulated with JavaScript. It allows for dynamic updates and interactions on a webpage."
+      },
+      {
+        "keyword": "Web Accessibility",
+        "description": "Web accessibility ensures that websites and web applications are usable by people with disabilities. It involves techniques like using ARIA roles and providing alternative text for images."
+      }
+    ]
+  }
+  
